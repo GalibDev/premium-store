@@ -24,6 +24,12 @@ const products = [
   ['Amazon Prime Video 3 Months', '0C4A6E', '00A8E1', 'Streaming', 'Shared Access', 'Instant', 90, 449, 370, false],
 ];
 
+const officialDomains = [
+  'openai.com', 'netflix.com', 'canva.com', 'capcut.com', 'youtube.com', 'microsoft.com',
+  'grammarly.com', 'adobe.com', 'spotify.com', 'nordvpn.com', 'linkedin.com', 'notion.so',
+  'github.com', 'one.google.com', 'envato.com', 'microsoft.com', 'figma.com', 'primevideo.com',
+];
+
 await mongoose.connect(uri);
 const db = mongoose.connection.db;
 if (!db) throw new Error('Database connection unavailable');
@@ -47,7 +53,7 @@ await recipes.deleteMany({});
 const now = new Date();
 await recipes.insertMany(products.map(([name, background, accent, category, deliveryType, deliverySpeed, duration, price, likes, featured], index) => ({
   recipeName: name,
-  recipeImage: `https://placehold.co/1200x800/${background}/${accent}/png?text=${encodeURIComponent(name)}`,
+  recipeImage: `https://www.google.com/s2/favicons?domain_url=https://${officialDomains[index]}&sz=256`,
   category,
   cuisineType: deliveryType,
   difficultyLevel: deliverySpeed,

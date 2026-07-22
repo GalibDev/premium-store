@@ -11,7 +11,7 @@ export function RecipeCard({ recipe, compact = false }: { recipe: Recipe; compac
     <motion.article whileHover={{ y: -4 }} className="card-premium group overflow-hidden">
       <Link href={`/recipes/${recipe._id}`} className="relative block overflow-hidden">
         <img
-          className={cn('w-full object-cover transition duration-500 group-hover:scale-105', compact ? 'h-40' : 'h-52')}
+          className={cn('w-full bg-gradient-to-br from-slate-50 to-slate-100 object-contain p-10 transition duration-500 group-hover:scale-105 dark:from-slate-800 dark:to-slate-900', compact ? 'h-40' : 'h-52')}
           src={imageOrFallback(recipe.recipeImage)}
           alt={recipe.recipeName}
         />

@@ -51,7 +51,7 @@ export function FavoritesClient() {
             {data.items.map((item) =>
               item.recipeId ? (
                 <div className="card-premium overflow-hidden" key={item._id}>
-                  <img className="h-48 w-full object-cover" src={imageOrFallback(item.recipeId.recipeImage)} alt={item.recipeId.recipeName} />
+                  <img className="h-48 w-full bg-base-200 object-contain p-10" src={imageOrFallback(item.recipeId.recipeImage)} alt={item.recipeId.recipeName} />
                   <div className="p-5">
                     <h3 className="text-xl font-bold">{item.recipeId.recipeName}</h3>
                     <div className="mt-5 flex gap-2">

@@ -137,7 +137,7 @@ export default function RecipeDetailsPage() {
       </div>
       <div className="mt-6 grid gap-10 lg:grid-cols-[1.1fr_.9fr]">
         <div>
-          <img className="aspect-[4/3] w-full rounded-3xl object-cover shadow-soft" src={imageOrFallback(recipe.recipeImage)} alt={recipe.recipeName} />
+          <img className="aspect-[4/3] w-full rounded-3xl bg-gradient-to-br from-slate-50 to-slate-100 object-contain p-20 shadow-soft dark:from-slate-800 dark:to-slate-900" src={imageOrFallback(recipe.recipeImage)} alt={recipe.recipeName} />
         </div>
         <div className="py-3">
           <span className="badge badge-success badge-outline">{recipe.category}</span>

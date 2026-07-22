@@ -94,6 +94,12 @@ async function main() {
   ['Amazon Prime Video 3 Months', '0C4A6E', '00A8E1', 'Streaming', 'Shared Access', 'Instant', 90, 449, 370, false],
 ] as const;
 
+  const officialDomains = [
+    'openai.com', 'netflix.com', 'canva.com', 'capcut.com', 'youtube.com', 'microsoft.com',
+    'grammarly.com', 'adobe.com', 'spotify.com', 'nordvpn.com', 'linkedin.com', 'notion.so',
+    'github.com', 'one.google.com', 'envato.com', 'microsoft.com', 'figma.com', 'primevideo.com',
+  ];
+
   await Recipe.deleteMany({ recipeName: { $nin: seeds.map(([name]) => name) } });
 
   await Recipe.bulkWrite(
@@ -106,7 +112,7 @@ async function main() {
           update: {
             $set: {
               recipeName,
-              recipeImage: `https://placehold.co/1200x800/${background}/${accent}/png?text=${encodeURIComponent(recipeName)}`,
+              recipeImage: `https://www.google.com/s2/favicons?domain_url=https://${officialDomains[index]}&sz=256`,
               category,
               cuisineType,
               difficultyLevel,
