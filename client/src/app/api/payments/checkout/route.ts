@@ -46,7 +46,7 @@ export async function POST(request: Request) {
     }
 
     const amount = membership ? env.PREMIUM_PRICE : Math.round((recipe.price || 0) * 100);
-    const name = membership ? 'RecipeHub Premium Membership' : recipe.recipeName;
+    const name = membership ? 'PremiumStore Membership' : recipe.recipeName;
 
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',

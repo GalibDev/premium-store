@@ -166,7 +166,7 @@ export function MyRecipesClient() {
           <EmptyView
             icon={<BookOpen size={64} />}
             title="No recipes yet"
-            description="Publish your first recipe and start building your RecipeHub profile."
+            description="Publish your first product and start building your PremiumStore profile."
             action={
               <Link className="btn-brand" href="/dashboard/add">
                 Add Recipe

@@ -29,7 +29,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-white/10">
         <div className="shell flex flex-col gap-3 py-6 text-xs text-white/50 sm:flex-row sm:justify-between">
-          <span>© 2026 RecipeHub. All rights reserved.</span>
+          <span>© 2026 PremiumStore. All rights reserved.</span>
           <span>Privacy Policy · Terms of Service · Cookie Policy</span>
         </div>
       </div>

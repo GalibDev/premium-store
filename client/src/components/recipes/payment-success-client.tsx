@@ -44,7 +44,7 @@ export function PaymentSuccessClient() {
           <>
             <CheckCircle2 className="mx-auto text-brand-600" size={84} />
             <h1 className="mt-5 text-4xl font-extrabold">Payment Successful!</h1>
-            <p className="mt-3 text-base-content/60">Your RecipeHub benefits are now active.</p>
+            <p className="mt-3 text-base-content/60">Your PremiumStore benefits are now active.</p>
             <Link className="btn-brand mt-8" href="/dashboard">
               Go to Dashboard
             </Link>

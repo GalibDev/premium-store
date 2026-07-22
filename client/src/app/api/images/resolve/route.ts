@@ -36,7 +36,7 @@ export async function GET(request: Request) {
 
     const response = await fetch(target.toString(), {
       headers: {
-        'user-agent': 'Mozilla/5.0 RecipeHub image resolver',
+        'user-agent': 'Mozilla/5.0 PremiumStore image resolver',
       },
       next: { revalidate: 60 * 60 * 24 },
     });

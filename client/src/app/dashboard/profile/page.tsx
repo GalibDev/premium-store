@@ -56,7 +56,7 @@ export default function ProfilePage() {
           <div className="flex items-center gap-5">
             <img
               className="size-24 rounded-full object-cover ring-4 ring-brand-100"
-              src={user?.image || avatarFromName(user?.name || 'RecipeHub')}
+              src={user?.image || avatarFromName(user?.name || 'PremiumStore')}
               alt={user?.name || 'Profile'}
             />
             <div>

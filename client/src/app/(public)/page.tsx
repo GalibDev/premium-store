@@ -31,7 +31,7 @@ export default function HomePage() {
   return (
     <>
       <section className="hero-glow overflow-hidden">
-        <div className="shell grid min-h-[650px] items-center gap-10 py-12 lg:grid-cols-[1.02fr_.98fr] lg:py-16">
+        <div className="shell grid min-h-[65vh] items-center gap-10 py-10 lg:grid-cols-[1.02fr_.98fr] lg:py-12">
           <motion.div initial={{ opacity: 0, x: -28 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: .6 }}>
             <span className="eyebrow"><Sparkles size={14}/> Discover · Access · Create</span>
             <h1 className="mt-7 max-w-3xl text-5xl font-black leading-[1.02] tracking-[-.045em] sm:text-6xl xl:text-7xl">

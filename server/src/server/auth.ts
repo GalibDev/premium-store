@@ -46,7 +46,7 @@ export function signAuthToken(user: UserDocument) {
     env.JWT_SECRET,
     {
       expiresIn: env.JWT_EXPIRES_IN as StringValue,
-      issuer: 'recipehub',
+      issuer: 'premiumstore',
     }
   );
 }
@@ -80,7 +80,7 @@ export async function getCurrentUser() {
     await connectDatabase();
 
     const payload = jwt.verify(token, env.JWT_SECRET, {
-      issuer: 'recipehub',
+      issuer: 'premiumstore',
     }) as AuthPayload;
 
     const user = await User.findById(payload.sub);
