@@ -1,0 +1,24 @@
+0000000000000000000000000000000000000000 66cba313a46844c1ab05b9900686c2d1417e9a1d GalibDev <mirza.galib.palash> 1781777251 +0600	commit (initial): Initial RecipeHub backend
+66cba313a46844c1ab05b9900686c2d1417e9a1d 2f5935bb44d03b30309490f84aed5fa545c099c9 GalibDev <mirza.galib.palash> 1781815125 +0600	commit: refactor backend into modular app architecture
+2f5935bb44d03b30309490f84aed5fa545c099c9 c26cab65d6c0c952c3e547c123ff700c67785af5 GalibDev <mirza.galib.palash> 1781816526 +0600	commit: docs backend environment and setup
+c26cab65d6c0c952c3e547c123ff700c67785af5 f8c7bdc0a4120bc3d0b282c745d2993923f9e0a8 GalibDev <mirza.galib.palash> 1781864413 +0600	commit: feat: drive auth cookies and CORS from env
+f8c7bdc0a4120bc3d0b282c745d2993923f9e0a8 e20a8c6a8f5b365159ec18b5f13882f4c164fa14 GalibDev <mirza.galib.palash> 1781864431 +0600	commit: feat: expand favorites API
+e20a8c6a8f5b365159ec18b5f13882f4c164fa14 89c81c253a5f58317f8e04a77d2f8ed838e4dfbd GalibDev <mirza.galib.palash> 1781864447 +0600	commit: feat: add user report history API
+89c81c253a5f58317f8e04a77d2f8ed838e4dfbd 56e3927d6a0a4d9dbd3372658cc2500d271a35c0 GalibDev <mirza.galib.palash> 1781864467 +0600	commit: feat: make stripe confirmations idempotent
+56e3927d6a0a4d9dbd3372658cc2500d271a35c0 6f17350c70f074a5b6cde42a76fcc5da2807e00b GalibDev <mirza.galib.palash> 1781864487 +0600	commit: feat: harden recipe search and category filters
+6f17350c70f074a5b6cde42a76fcc5da2807e00b 19e08d239f91de1601405b9518e12c9a2d0988c3 GalibDev <mirza.galib.palash> 1781864499 +0600	commit: feat: enrich pagination metadata
+19e08d239f91de1601405b9518e12c9a2d0988c3 c53fa197a9eb340521d3e4eed0d814c9023f84b3 GalibDev <mirza.galib.palash> 1781864516 +0600	commit: feat: add admin role and recipe status controls
+c53fa197a9eb340521d3e4eed0d814c9023f84b3 959e06f88d044d768ca128fe987d1fd871a6e929 GalibDev <mirza.galib.palash> 1781864530 +0600	commit: feat: configure Better Auth trusted origins
+959e06f88d044d768ca128fe987d1fd871a6e929 fe743f0775a28640e7fd4d73d2698902f262eff8 GalibDev <mirza.galib.palash> 1781864565 +0600	commit: feat: validate MongoDB ids consistently
+fe743f0775a28640e7fd4d73d2698902f262eff8 52ce481ba7f2f5b9dec9dfbd8178ce2b989c7a5d GalibDev <mirza.galib.palash> 1781864593 +0600	commit: feat: improve API error responses
+52ce481ba7f2f5b9dec9dfbd8178ce2b989c7a5d b613887bdccf4430540082e04fbe2013ac1ef919 GalibDev <mirza.galib.palash> 1781864626 +0600	commit: docs: document server setup and APIs
+b613887bdccf4430540082e04fbe2013ac1ef919 2ea90349ba94f10e8bef29f7386f606cd495c9ce GalibDev <mirza.galib.palash> 1781866244 +0600	commit: chore: add richer demo seed data
+2ea90349ba94f10e8bef29f7386f606cd495c9ce 18236975aaa0373a990ce6610ada45ad6ca5229e GalibDev <mirza.galib.palash> 1781885786 +0600	commit: feat: migrate server repo to Next.js TypeScript API
+18236975aaa0373a990ce6610ada45ad6ca5229e 7725678a5a968b8c2b3be8f081602f22c6b1d186 GalibDev <mirza.galib.palash> 1781901680 +0600	commit: feat: expose Better Auth Google configuration
+7725678a5a968b8c2b3be8f081602f22c6b1d186 72eebcff38d470567652f1f1e2e1219a0c4176a8 GalibDev <mirza.galib.palash> 1781904348 +0600	commit: fix: pin server dev API to port 5000
+72eebcff38d470567652f1f1e2e1219a0c4176a8 063807cc2ed56241450fbeb1382b0853e208a962 GalibDev <mirza.galib.palash> 1781906754 +0600	commit: fix: make env validation safe for Vercel builds
+063807cc2ed56241450fbeb1382b0853e208a962 58de1d034440839298807fbd755f30c27f5b364f GalibDev <mirza.galib.palash> 1781964254 +0600	commit: Add liked recipes API and premium checkout guard
+58de1d034440839298807fbd755f30c27f5b364f 6d3583003fd31914aedbf58d77ded2e93ddda911 GalibDev <mirza.galib.palash> 1781965255 +0600	commit: Protect admin accounts from blocking
+6d3583003fd31914aedbf58d77ded2e93ddda911 b277521e1955b36916c8a60be7e7b9e66c9b0f2f GalibDev <mirza.galib.palash> 1781966002 +0600	commit: Add admin list summaries and report filters
+b277521e1955b36916c8a60be7e7b9e66c9b0f2f 6b19d1de0d427c3e7ff3b5cc5165eab3e30bc7ac GalibDev <mirza.galib.palash> 1781977787 +0600	commit: Add admin payment filters and summaries
+6b19d1de0d427c3e7ff3b5cc5165eab3e30bc7ac 40a0dbe54cbf2420740942aeec8d29208fee5f82 GalibDev <mirza.galib.palash> 1782033194 +0600	commit: Return liked state for recipe details

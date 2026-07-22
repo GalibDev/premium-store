@@ -1,0 +1,170 @@
+'use client';
+
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { Globe2, ChefHat, Crown, Eye, EyeOff } from 'lucide-react';
+import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
+import { api, messageOf } from '@/lib/api';
+import { authClient } from '@/lib/auth-client';
+import { useAuth } from '@/providers';
+
+type AuthValues = {
+  name: string;
+  image: string;
+  email: string;
+  password: string;
+};
+
+export function AuthForm({ registerMode = false }: { registerMode?: boolean }) {
+  return <AuthFormInner registerMode={registerMode} nextPath={null} />;
+}
+
+export function AuthFormInner({
+  registerMode = false,
+  nextPath,
+}: {
+  registerMode?: boolean;
+  nextPath: string | null;
+}) {
+  const router = useRouter();
+  const { setUser } = useAuth();
+  const [googleEnabled, setGoogleEnabled] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const next = nextPath || '/';
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm<AuthValues>();
+
+  async function onSubmit(values: AuthValues) {
+    try {
+      const response = await api.post(registerMode ? '/auth/register' : '/auth/login', values);
+      setUser(response.data.user);
+      toast.success(registerMode ? 'Welcome to PremiumStore!' : 'Welcome back!');
+
+      router.replace(next);
+      router.refresh();
+    } catch (error) {
+      toast.error(messageOf(error));
+    }
+  }
+
+  useEffect(() => {
+    api
+      .get('/auth/config')
+      .then((response) => setGoogleEnabled(Boolean(response.data.google)))
+      .catch(() => setGoogleEnabled(false));
+  }, []);
+
+  async function loginWithGoogle() {
+    if (!googleEnabled) {
+      toast.error('Google login is not configured yet');
+      return;
+    }
+
+    const result = await authClient.signIn.social({
+      provider: 'google',
+      callbackURL: `${window.location.origin}/auth-bridge?next=${encodeURIComponent(next)}`,
+    });
+
+    if (result?.error) {
+      toast.error(result.error.message || 'Google sign-in failed');
+    }
+  }
+
+  return (
+    <div className="grid min-h-screen lg:grid-cols-2">
+      <div className="hidden bg-gradient-to-br from-brand-900 to-brand-600 p-16 text-white lg:flex lg:flex-col">
+        <Link href="/" className="flex items-center gap-2 font-display text-xl font-extrabold tracking-tight">
+          <span className="grid size-10 place-items-center rounded-2xl bg-white/10 text-white">
+            <ChefHat size={24} />
+          </span>
+          PremiumStore
+        </Link>
+        <div className="my-auto max-w-lg">
+          <Crown size={56} className="text-amber-400" />
+          <h1 className="mt-6 text-5xl font-extrabold">
+            {registerMode ? 'Join the digital marketplace.' : 'Welcome back.'}
+          </h1>
+          <p className="mt-5 text-lg leading-8 text-white/70">
+            Discover premium digital products, manage purchases, and grow your seller profile in one place.
+          </p>
+        </div>
+      </div>
+      <div className="flex items-center justify-center p-6">
+        <div className="w-full max-w-md">
+          <Link href="/" className="flex items-center gap-2 font-display text-xl font-extrabold tracking-tight">
+            <span className="grid size-10 place-items-center rounded-2xl bg-brand-50 text-brand-600">
+              <ChefHat size={24} />
+            </span>
+            PremiumStore
+          </Link>
+          <h2 className="mt-8 text-3xl font-bold">{registerMode ? 'Create your account' : 'Login'}</h2>
+          <p className="mt-2 text-base-content/60">
+            {registerMode ? 'Get started with PremiumStore today.' : 'Please login to continue.'}
+          </p>
+          <form onSubmit={handleSubmit(onSubmit)} className="mt-8 space-y-5">
+            {registerMode ? (
+              <>
+                <label className="block">
+                  <span className="label-text-strong">Name</span>
+                  <input className="input-clean" {...register('name', { required: 'Name is required' })} />
+                </label>
+                <label className="block">
+                  <span className="label-text-strong">Image URL</span>
+                  <input className="input-clean" {...register('image')} />
+                </label>
+              </>
+            ) : null}
+            <label className="block">
+              <span className="label-text-strong">Email</span>
+              <input
+                type="email"
+                className="input-clean"
+                {...register('email', { required: 'Email is required' })}
+              />
+            </label>
+            <label className="block">
+              <span className="label-text-strong">Password</span>
+              <div className="relative">
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  className="input-clean pr-12"
+                  {...register('password', {
+                    required: 'Password is required',
+                    minLength: { value: 6, message: 'Minimum 6 characters' },
+                  })}
+                />
+                <button
+                  type="button"
+                  aria-label={showPassword ? 'Hide password' : 'Show password'}
+                  className="absolute right-3 top-1/2 grid size-8 -translate-y-1/2 place-items-center rounded-full text-base-content/55 transition hover:bg-base-200 hover:text-brand-600"
+                  onClick={() => setShowPassword((value) => !value)}
+                >
+                  {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                </button>
+              </div>
+              {errors.password ? <small className="mt-2 block text-error">{errors.password.message}</small> : null}
+            </label>
+            <button disabled={isSubmitting} className="btn-brand w-full">
+              {registerMode ? 'Register' : 'Login'}
+            </button>
+          </form>
+          <button onClick={loginWithGoogle} disabled={!googleEnabled} className="btn btn-outline mt-4 w-full">
+            <Globe2 size={18} />
+            Continue with Google
+          </button>
+          <p className="mt-6 text-center text-sm">
+            {registerMode ? 'Already have an account?' : 'New to PremiumStore?'}{' '}
+            <Link className="font-bold text-brand-600" href={registerMode ? '/login' : '/register'}>
+              {registerMode ? 'Login' : 'Register'}
+            </Link>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,50 @@
+0000000000000000000000000000000000000000 fe1f86de02ec6cec345ec9f994dbce6c9de51f7b GalibDev <mirza.galib.palash> 1781777081 +0600	commit (initial): Initial RecipeHub frontend
+fe1f86de02ec6cec345ec9f994dbce6c9de51f7b 8cbeba989f5285236166faa4e4b4858ae4674c53 GalibDev <mirza.galib.palash> 1781816551 +0600	commit: migrate client scaffold from vite to next app router
+8cbeba989f5285236166faa4e4b4858ae4674c53 bedbeca2fb58be09ef500167f0baa15bd5d7aaae GalibDev <mirza.galib.palash> 1781816578 +0600	commit: add typed client auth and data foundation
+bedbeca2fb58be09ef500167f0baa15bd5d7aaae 4c85bfd5d9f15914610f1b0cd5e413318adaa5de GalibDev <mirza.galib.palash> 1781816628 +0600	commit: build the public layout and landing experience
+4c85bfd5d9f15914610f1b0cd5e413318adaa5de aa7b9cce9888a3c54dcd5e936304ec6a9e8bdcf0 GalibDev <mirza.galib.palash> 1781816675 +0600	commit: add recipe browsing and detail pages
+aa7b9cce9888a3c54dcd5e936304ec6a9e8bdcf0 748fc442d9179daa29b83903d7a292b5c6ebe9dd GalibDev <mirza.galib.palash> 1781816691 +0600	commit: implement login register and better auth bridge
+748fc442d9179daa29b83903d7a292b5c6ebe9dd c05f57e48eec357ed9ca1e2074408e1af3911336 GalibDev <mirza.galib.palash> 1781816723 +0600	commit: wire the stripe payment success experience
+c05f57e48eec357ed9ca1e2074408e1af3911336 3aa11282beee75e951d946a41d5d2aff59520023 GalibDev <mirza.galib.palash> 1781816746 +0600	commit: create the user dashboard shell and overview
+3aa11282beee75e951d946a41d5d2aff59520023 cc56b0787f10a9145b8f9194e4210bd720961b17 GalibDev <mirza.galib.palash> 1781816771 +0600	commit: add recipe publishing and personal recipe management
+cc56b0787f10a9145b8f9194e4210bd720961b17 3fc156c5d38810d55bfaa17056ef50c98fe2db22 GalibDev <mirza.galib.palash> 1781867506 +0600	commit: chore: add full stack runtime dependencies
+3fc156c5d38810d55bfaa17056ef50c98fe2db22 1251ff672d67709b0f6f5172c9fc62cf93563fd6 GalibDev <mirza.galib.palash> 1781867511 +0600	commit: feat: add Next server data and auth layer
+1251ff672d67709b0f6f5172c9fc62cf93563fd6 bf14b12215f57aa0c308b1758708d1511eb56d94 GalibDev <mirza.galib.palash> 1781867516 +0600	commit: feat: migrate auth APIs to Next routes
+bf14b12215f57aa0c308b1758708d1511eb56d94 bf0de7d091c7c75c3751bb9dfa5676ef166e9985 GalibDev <mirza.galib.palash> 1781867520 +0600	commit: feat: migrate recipe APIs to Next routes
+bf0de7d091c7c75c3751bb9dfa5676ef166e9985 206acc545d71e12196143a77c6662768e540501f GalibDev <mirza.galib.palash> 1781867525 +0600	commit: feat: migrate favorites and reports APIs
+206acc545d71e12196143a77c6662768e540501f 4640abf09b1943a4150a06a107d1f592745e2bf4 GalibDev <mirza.galib.palash> 1781867530 +0600	commit: feat: migrate Stripe payment APIs
+4640abf09b1943a4150a06a107d1f592745e2bf4 e58ff4349713250b1280fc213c25ba1e9009fb2e GalibDev <mirza.galib.palash> 1781867534 +0600	commit: feat: migrate dashboard APIs to Next routes
+e58ff4349713250b1280fc213c25ba1e9009fb2e 62df7f04d5d4c6fbfc12e5b9d8573774bff8b39c GalibDev <mirza.galib.palash> 1781867539 +0600	commit: feat: migrate admin APIs to Next routes
+62df7f04d5d4c6fbfc12e5b9d8573774bff8b39c 3e2248f34923275c9b9842c8ff390392572043dd GalibDev <mirza.galib.palash> 1781867547 +0600	commit: feat: point frontend at internal Next APIs
+3e2248f34923275c9b9842c8ff390392572043dd 8395a11d217d897a86555cca491b4a59c23f0cbb GalibDev <mirza.galib.palash> 1781867553 +0600	commit: chore: add Next seed data script
+8395a11d217d897a86555cca491b4a59c23f0cbb 93f219e4df629f9c440060237602b36a97b5767f GalibDev <mirza.galib.palash> 1781867563 +0600	commit: feat: polish auth pages for Next app
+93f219e4df629f9c440060237602b36a97b5767f 80849030b70e0ef624ef7272a186cbd14d6f7605 GalibDev <mirza.galib.palash> 1781867568 +0600	commit: feat: add browse and payment success clients
+80849030b70e0ef624ef7272a186cbd14d6f7605 32beb4ed9a430d68a5eb1357b9609c13ac413c1c GalibDev <mirza.galib.palash> 1781867574 +0600	commit: feat: add dashboard recipe favorite purchase views
+32beb4ed9a430d68a5eb1357b9609c13ac413c1c 4e3332dbb969f66fb36ae3b63b29112fda0d9591 GalibDev <mirza.galib.palash> 1781867578 +0600	commit: feat: add admin management screens
+4e3332dbb969f66fb36ae3b63b29112fda0d9591 9752efb89c157685cf81c96f4125d49c18c32042 GalibDev <mirza.galib.palash> 1781867584 +0600	commit: docs: document full stack Next setup
+9752efb89c157685cf81c96f4125d49c18c32042 ca79dd502f03b2c6ca44397b691e93797955024c GalibDev <mirza.galib.palash> 1781867634 +0600	commit: fix: derive auth client URL from browser origin
+ca79dd502f03b2c6ca44397b691e93797955024c 38f917fe041dd2f4add2ddcb80c02b7e488cd699 GalibDev <mirza.galib.palash> 1781901679 +0600	commit: feat: expose Better Auth Google configuration
+38f917fe041dd2f4add2ddcb80c02b7e488cd699 492bb5ae90f4aea18a7cf6d79c5ab62ae1d713a7 GalibDev <mirza.galib.palash> 1781904348 +0600	commit: fix: pin client dev server to port 3000
+492bb5ae90f4aea18a7cf6d79c5ab62ae1d713a7 7bd01c93bf19a788eae5b24175651e4e0d1b172d GalibDev <mirza.galib.palash> 1781906754 +0600	commit: fix: make env validation safe for Vercel builds
+7bd01c93bf19a788eae5b24175651e4e0d1b172d 02548d76beaa7951ed9d5420c783306faf58c157 GalibDev <mirza.galib.palash> 1781964254 +0600	commit: Add premium profile and liked recipes dashboard
+02548d76beaa7951ed9d5420c783306faf58c157 cabdeb1144ab7fabb35a4f31f3e3fd49a685655b GalibDev <mirza.galib.palash> 1781965255 +0600	commit: Protect admin accounts from blocking
+cabdeb1144ab7fabb35a4f31f3e3fd49a685655b 6cce9e7f1123110dcccfd3593b146ca1b38bb83a GalibDev <mirza.galib.palash> 1781966002 +0600	commit: Polish admin users and reports pages
+6cce9e7f1123110dcccfd3593b146ca1b38bb83a 5f56973df57f81c731f235f83bc575acf9b21d63 GalibDev <mirza.galib.palash> 1781974974 +0600	commit: Add recipe editing and image link resolver
+5f56973df57f81c731f235f83bc575acf9b21d63 41f91ee1fd826cebd1c21f53b4d371a229ee0621 GalibDev <mirza.galib.palash> 1781977787 +0600	commit: Polish admin transactions page
+41f91ee1fd826cebd1c21f53b4d371a229ee0621 31b99a71fd106704e1e7df687f11e6c057de1bc8 GalibDev <mirza.galib.palash> 1781979819 +0600	commit: Polish admin manage recipes page
+31b99a71fd106704e1e7df687f11e6c057de1bc8 093e06b9a1bdfd452e2580050529089db9ef384c GalibDev <mirza.galib.palash> 1781980189 +0600	commit: Allow admins to edit recipes
+093e06b9a1bdfd452e2580050529089db9ef384c 52700a1bb34e1cae51751e16e15cd69790ed2d4c GalibDev <mirza.galib.palash> 1781983857 +0600	commit: Add home page stats sections
+52700a1bb34e1cae51751e16e15cd69790ed2d4c 6001b0f311beb5a3c4e06bfe3672bba6c13f4970 GalibDev <mirza.galib.palash> 1781985236 +0600	commit: Update taste trends favorites
+6001b0f311beb5a3c4e06bfe3672bba6c13f4970 ad613cded393d88bd0c98daba9d8b5db8d343fb7 GalibDev <mirza.galib.palash> 1781986229 +0600	commit: Redesign home trend cravings section
+ad613cded393d88bd0c98daba9d8b5db8d343fb7 1e8694119cc5d2411cf79610c4da951a4917c31b GalibDev <mirza.galib.palash> 1782026910 +0600	commit: Refine home trends and cravings carousel
+1e8694119cc5d2411cf79610c4da951a4917c31b e6453d0ade7c34d1b19c136cee0a54391b211682 GalibDev <mirza.galib.palash> 1782031341 +0600	commit: Add dashboard link to public nav
+e6453d0ade7c34d1b19c136cee0a54391b211682 f53cb322b42180d85b8d9c5cf3f57ea3b1d1536a GalibDev <mirza.galib.palash> 1782033194 +0600	commit: Show active liked state on recipes
+f53cb322b42180d85b8d9c5cf3f57ea3b1d1536a e9c1ae5817efa91d0c7533ef7a648ae44a4ca1d8 GalibDev <mirza.galib.palash> 1782034869 +0600	commit: Animate home hero stats
+e9c1ae5817efa91d0c7533ef7a648ae44a4ca1d8 437075d9567ed62b34b69dbaf91eb691516843b8 GalibDev <mirza.galib.palash> 1782036779 +0600	commit: Fix 404 page copy encoding
+437075d9567ed62b34b69dbaf91eb691516843b8 f380b6622a243221df2712ffafcffc2000f33afa GalibDev <mirza.galib.palash> 1782037123 +0600	commit: Redirect auth success to home
+f380b6622a243221df2712ffafcffc2000f33afa 4632399505761858801821cd91590e7cd7f3b9e7 GalibDev <mirza.galib.palash> 1782037577 +0600	commit: Improve mobile responsive layouts
+4632399505761858801821cd91590e7cd7f3b9e7 e92bed6a725f01a608d8d82b599ef9618ee22fa3 GalibDev <mirza.galib.palash> 1782037931 +0600	commit: Tighten mobile header spacing
+e92bed6a725f01a608d8d82b599ef9618ee22fa3 fe41bd7d6568bf2e9ccd8fe5cd70a1cec758c118 GalibDev <mirza.galib.palash> 1782120719 +0600	commit: Add password visibility toggle
+fe41bd7d6568bf2e9ccd8fe5cd70a1cec758c118 e61a41d3df4d8a3cee6cfb694e614b751a42e8a8 GalibDev <mirza.galib.palash> 1782364331 +0600	commit: Improve premium upgrade flow
+e61a41d3df4d8a3cee6cfb694e614b751a42e8a8 d15b7bf052d80303a11ab3bd669ce5a584556f5d GalibDev <mirza.galib.palash> 1782365854 +0600	commit: Complete final requirement fixes
+d15b7bf052d80303a11ab3bd669ce5a584556f5d 4abd9328a99ddf5c84940eec87423530eae49834 GalibDev <mirza.galib.palash> 1782386068 +0600	commit: Add recipe rating system
