@@ -1,5 +1,5 @@
 export const fallbackFood =
-  'https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1000&q=80';
+  'https://placehold.co/1200x800/0F172A/10A37F/png?text=PremiumStore';
 
 export const categories = [
   'AI Tools',

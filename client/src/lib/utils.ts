@@ -5,9 +5,9 @@ export function cn(...values: Array<string | false | null | undefined>) {
 }
 
 export function formatCurrency(value = 0) {
-  return new Intl.NumberFormat('en-US', {
+  return new Intl.NumberFormat('en-BD', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'BDT',
   }).format(value);
 }
 
